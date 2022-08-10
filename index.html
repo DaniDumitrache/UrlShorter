@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url shorter</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="app">
+        <h1 class="logo">Short URL</h1>
+        <div class="short-container">
+            <div class="short">
+                <span>Paste the URL to be shortened</span>
+                <form action="" method="POST">
+                    <input class="inp-text" type="url" name="url" id="url" require placeholder="Enter the link here">
+                    <input class="btn-primary" type="submit" id="ValidateData" name="ValidateData" value="Shorten URL">
+                    <br>
+                    <span class="error"></span>
+                </form>
+                <p>
+                    ShortURL is a free tool to shorten a URL or reduce a link
+                    Use our URL Shortener to create a shortened link making it easy to remember
+                </p>
+            </div>
+
+            <div class="short" id="GetShortLink" style="display: none;">
+                <h1>Your shortened URL</h1>
+                <span>Copy the shortened link and share it in messages, texts, posts, websites and other
+                    locations.</span>
+                <form action="" method="POST">
+                    <input class="inp-text" id="ShortLink" disabled="true" require placeholder="Enter the link here">
+                    <input type="button" class="btn-primary" id="CopyShort" value="copy url">
+                    <br>
+                    <span>Long URL: <a href="" id="LongUrl"></a></span>
+                </form>
+                <p>
+                    Create other <a href="">shortened URL</a>.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>
